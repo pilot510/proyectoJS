@@ -1,6 +1,5 @@
 // JAVASCRIPT
 
-
 class Producto {
     constructor(nombre, precio, cantidad) {
         this.nombre = nombre;
