@@ -1,6 +1,7 @@
 // JAVASCRIPT
 
 class Producto {
+
     constructor(nombre, precio, cantidad) {
         this.nombre = nombre;
         this.precio = precio;
@@ -16,40 +17,47 @@ const producto6 = new Producto("cpu", 45000, 1);
 const producto7 = new Producto("gpu", 75000, 1);
 const producto8 = new Producto("gabinete", 10000, 1);
 
-let articulo1 = prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir");
-while (articulo1 <= "8") {
-    switch (articulo1) {
-        case "1":
-            console.log(producto1);
-            break;
-        case "2":
-            console.log(producto2);
-            break;
-        case "3":
-            console.log(producto3);
-            break;
-        case "4":
-            console.log(producto4);
-            break;
-        case "5":
-            console.log(producto5);
-            break;
-        case "6":
-            console.log(producto6);
-            break;
-        case "7":
-            console.log(producto7);
-            break;
-        case "8":
-            console.log(producto8);
-            break;
-        default:
-            alert("ingrese un numero valido");
+function elegirProducto() {
 
-            break;
+    let articulo1 = parseInt(prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir"));
+
+    while (articulo1 <= 8) {
+        switch (articulo1) {
+            case 1:
+                console.log(producto1);
+                break;
+            case 2:
+                console.log(producto2);
+                break;
+            case 3:
+                console.log(producto3);
+                break;
+            case 4:
+                console.log(producto4);
+                break;
+            case 5:
+                console.log(producto5);
+                break;
+            case 6:
+                console.log(producto6);
+                break;
+            case 7:
+                console.log(producto7);
+                break;
+            case 8:
+                console.log(producto8);
+                break;
+            default:
+                alert("ingrese un numero valido");
+                break;
+        }
+
+        articulo1 = parseInt(prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir"));
     }
-    articulo1 = prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir");
+
 }
+
+elegirProducto();
 
 const miCarrito = []
 
