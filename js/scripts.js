@@ -53,6 +53,8 @@ function elegirProducto() {
         }
 
         articulo1 = parseInt(prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir"));
+        console.log(articulo1)
+
     }
 
 }
@@ -70,3 +72,11 @@ miCarrito.push(producto6);
 miCarrito.push(producto7);
 miCarrito.push(producto8);
 console.log(miCarrito);
+
+let parrafo = document.createElement("h1", "div")
+
+parrafo.innerHTML = `<h1>probando ingresar html desde js </h1><div><h2>con estilos</h2></div>`
+document.body.append(parrafo)
+parrafo.style.textAlign = "center"
+parrafo.style.color = "#459958"
+parrafo.style.backgroundColor = "#212529"
