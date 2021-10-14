@@ -1,114 +1,171 @@
-// JAVASCRIPT
+// // JAVASCRIPT
 
-class Producto {
+const producto = [{
+    nombre: "Mouse",
+    precio: 5000,
+    id: 1
+}, {
+    nombre: "Teclado",
+    precio: 25000,
+    id: 2
+}, {
+    nombre: "Auriculares",
+    precio: 15000,
+    id: 3
+}, {
+    nombre: "Microfono",
+    precio: 8000,
+    id: 4
+}, {
+    nombre: "Monitor",
+    precio: 35000,
+    id: 5
+}, {
+    nombre: "CPU",
+    precio: 45000,
+    id: 6
+}, {
+    nombre: "GPU",
+    precio: 75000,
+    id: 7
+}, {
+    nombre: "Gabinete",
+    precio: 10000,
+    id: 8
+}, ]
 
-    constructor(nombre, precio, cantidad) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
-    }
+document.getElementById("botonAdd1").onclick = function () {
+    let parrafo1 = document.createElement("div", "h2");
+    console.log(producto[0]);
+    parrafo1.innerHTML = `<div><h2>${producto[0].nombre}</h2><h2>${producto[0].precio}</h2></div>`;
+
+    document.body.append(parrafo1)
+    parrafo1.style.textAlign = "center";
+    parrafo1.style.color = "#459958";
+    parrafo1.style.backgroundColor = "#212529";
+    parrafo1.style.display = "flex";
+    parrafo1.style.justifyContent = "center";
 }
-const producto1 = new Producto("mouse", 5000, 1);
-const producto2 = new Producto("teclado", 25000, 1);
-const producto3 = new Producto("auriculares", 15000, 1);
-const producto4 = new Producto("microfono", 8000, 1);
-const producto5 = new Producto("monitor", 35000, 1);
-const producto6 = new Producto("cpu", 45000, 1);
-const producto7 = new Producto("gpu", 75000, 1);
-const producto8 = new Producto("gabinete", 10000, 1);
 
-let boton1 = document.getElementById("botonAdd1");
-boton1.onclick = () => console.log(producto1);
+document.getElementById("botonAdd2").onclick = function () {
+    let parrafo2 = document.createElement("div", "h2");
+    console.log(producto[1])
+    parrafo2.innerHTML = `<div><h2>${producto[1].nombre}</h2><h2>${producto[1].precio}</h2></div>`;
 
-let boton2 = document.getElementById("botonAdd2");
-boton2.onclick = () => console.log(producto2);
+    document.body.append(parrafo2)
 
-let boton3 = document.getElementById("botonAdd3");
-boton3.onclick = () => console.log(producto3);
+    parrafo2.style.textAlign = "center";
+    parrafo2.style.color = "#459958";
+    parrafo2.style.backgroundColor = "#212529";
+    parrafo2.style.display = "flex";
+    parrafo2.style.justifyContent = "center";
+}
 
-let boton4 = document.getElementById("botonAdd4");
-boton4.onclick = () => console.log(producto4);
+document.getElementById("botonAdd3").onclick = function () {
+    let parrafo3 = document.createElement("div", "h2");
+    console.log(producto[2])
+    parrafo3.innerHTML = `<div><h2>${producto[2].nombre}</h2><h2>${producto[2].precio}</h2></div>`;
 
-let boton5 = document.getElementById("botonAdd5");
-boton5.onclick = () => console.log(producto5);
+    document.body.append(parrafo3)
 
-let boton6 = document.getElementById("botonAdd6");
-boton6.onclick = () => console.log(producto6);
+    parrafo3.style.textAlign = "center";
+    parrafo3.style.color = "#459958";
+    parrafo3.style.backgroundColor = "#212529";
+    parrafo3.style.display = "flex";
+    parrafo3.style.justifyContent = "center";
+    4
+}
 
-let boton7 = document.getElementById("botonAdd7");
-boton7.onclick = () => console.log(producto7);
+document.getElementById("botonAdd4").onclick = function () {
+    let parrafo4 = document.createElement("div", "h2");
+    console.log(producto[3])
+    parrafo4.innerHTML = `<div><h2>${producto[3].nombre}</h2><h2>${producto[3].precio}</h2></div>`;
 
-let boton8 = document.getElementById("botonAdd8");
-boton8.onclick = () => console.log(producto8);
+    document.body.append(parrafo4)
 
+    parrafo4.style.textAlign = "center";
+    parrafo4.style.color = "#459958";
+    parrafo4.style.backgroundColor = "#212529";
+    parrafo4.style.display = "flex";
+    parrafo4.style.justifyContent = "center";
+}
 
-// function elegirProducto() {
+document.getElementById("botonAdd5").onclick = function () {
+    let parrafo5 = document.createElement("div", "h2");
+    console.log(producto[4])
+    parrafo5.innerHTML = `<div><h2>${producto[4].nombre}</h2><h2>${producto[4].precio}</h2></div>`;
 
-//     let articulo1 = parseInt(prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir"));
+    document.body.append(parrafo5)
 
-//     while (articulo1 <= 8) {
-//         switch (articulo1) {
-//             case 1:
-//                 console.log(producto1);
-//                 break;
-//             case 2:
-//                 console.log(producto2);
-//                 break;
-//             case 3:
-//                 console.log(producto3);
-//                 break;
-//             case 4:
-//                 console.log(producto4);
-//                 break;
-//             case 5:
-//                 console.log(producto5);
-//                 break;
-//             case 6:
-//                 console.log(producto6);
-//                 break;
-//             case 7:
-//                 console.log(producto7);
-//                 break;
-//             case 8:
-//                 console.log(producto8);
-//                 break;
-//             default:
-//                 alert("ingrese un numero valido");
-//                 break;
-//         }
+    parrafo5.style.textAlign = "center";
+    parrafo5.style.color = "#459958";
+    parrafo5.style.backgroundColor = "#212529";
+    parrafo5.style.display = "flex";
+    parrafo5.style.justifyContent = "center";
+}
 
-//         articulo1 = parseInt(prompt("Elija el producto \n 1-mouse \n 2-teclado \n 3-auriculares\n 4-microfono\n 5-monitor\n 6-cpu\n 7-gpu\n 8-gabinete \n ingrese otro numero para salir"));
-//         console.log(articulo1)
+document.getElementById("botonAdd6").onclick = function () {
+    let parrafo6 = document.createElement("div", "h2");
+    console.log(producto[5])
+    parrafo6.innerHTML = `<div><h2>${producto[5].nombre}</h2><h2>${producto[5].precio}</h2></div>`;
 
-//     }
+    document.body.append(parrafo6)
 
-// }
+    parrafo6.style.textAlign = "center";
+    parrafo6.style.color = "#459958";
+    parrafo6.style.backgroundColor = "#212529";
+    parrafo6.style.display = "flex";
+    parrafo6.style.justifyContent = "center";
+}
 
-// elegirProducto();
+document.getElementById("botonAdd7").onclick = function () {
+    let parrafo7 = document.createElement("div", "h2");
+    console.log(producto[6])
+    parrafo7.innerHTML = `<div><h2>${producto[6].nombre}</h2><h2>${producto[6].precio}</h2></div>`;
 
-// const miCarrito = [];
+    document.body.append(parrafo7)
 
-// miCarrito.push(producto1);
-// miCarrito.push(producto2);
-// miCarrito.push(producto3);
-// miCarrito.push(producto4);
-// miCarrito.push(producto5);
-// miCarrito.push(producto6);
-// miCarrito.push(producto7);
-// miCarrito.push(producto8);
-// console.log(miCarrito);
+    parrafo7.style.textAlign = "center";
+    parrafo7.style.color = "#459958";
+    parrafo7.style.backgroundColor = "#212529";
+    parrafo7.style.display = "flex";
+    parrafo7.style.justifyContent = "center";
+}
 
+document.getElementById("botonAdd8").onclick = function () {
+    let parrafo8 = document.createElement("div", "h2");
+    console.log(producto[7])
+    parrafo8.innerHTML = `<div><h2>${producto[7].nombre}</h2><h2>${producto[7].precio}</h2></div>`;
 
+    document.body.append(parrafo8)
 
+    parrafo8.style.textAlign = "center";
+    parrafo8.style.color = "#459958";
+    parrafo8.style.backgroundColor = "#212529";
+    parrafo8.style.display = "flex";
+    parrafo8.style.justifyContent = "center";
+}
 
-// let parrafo = document.createElement("h1", "div");
+// let boton1 = document.getElementById("botonAdd1");
+// boton1.onclick = () => console.log(producto[0]);
 
-// parrafo.innerHTML = `<h1>probando ingresar html desde js </h1><div><h2>con estilos</h2></div>`;
+// let boton2 = document.getElementById("botonAdd2");
+// boton2.onclick = () => console.log(producto[1]);
 
-// document.body.append(parrafo);
+// let boton3 = document.getElementById("botonAdd3");
+// boton3.onclick = () => console.log(producto[2]);
 
-// parrafo.style.textAlign = "center";
+// let boton4 = document.getElementById("botonAdd4");
+// boton4.onclick = () => console.log(producto[3]);
 
-// parrafo.style.color = "#459958";
+// let boton5 = document.getElementById("botonAdd5");
+// boton5.onclick = () => console.log(producto[4]);
 
-// parrafo.style.backgroundColor = "#212529";
+// let boton6 = document.getElementById("botonAdd6");
+// boton6.onclick = () => console.log(producto[5]);
+
+// let boton7 = document.getElementById("botonAdd7");
+// boton7.onclick = () => console.log(producto[6]);
+
+// let boton8 = document.getElementById("botonAdd8");
+// boton8.onclick = () => console.log(producto[7]);
