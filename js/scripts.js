@@ -57,5 +57,5 @@ function cargarCarrito() {
 // modo oscuro con jquery
 const modoOscuro = $('.modoOscuro')
 $('.modoOscuro').on('click', () => {
-    document.body.classList.toggle('modoOscuroBody')
+    $('body').toggleClass('modoOscuroBody')
 })
