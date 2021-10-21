@@ -34,7 +34,7 @@ function anadirAlCarrito(miProducto) {
     productos.push(miProducto);
     cargarCarrito();
 }
-// ----------------- item del carrito--------------------------
+// ----------------- item del carrito----------------------------
 function cargarCarrito() {
     modalCarrito.innerHTML = ''
     productos.map(item => {
@@ -54,7 +54,7 @@ function cargarCarrito() {
         modalCarrito.append(tablaItem)
     })
 }
-// modo oscuro con jquery
+// --------------- modo oscuro con jquery------------------------
 const modoOscuro = $('.modoOscuro')
 $('.modoOscuro').on('click', () => {
     $('body').toggleClass('modoOscuroBody')
