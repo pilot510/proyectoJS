@@ -2,6 +2,7 @@
 
 
 //---------------- seleccionar botones--------------------------
+
 const clickBoton = document.querySelectorAll('.botonAnadir')
 const modalCarrito = document.querySelector('.modal-body')
 let productos = []
@@ -11,6 +12,7 @@ clickBoton.forEach(btn => {
 
 
 // --------------- armando el objeto---------------------------
+
 function addCarritoItem(e) {
     const button = e.target
     const item = button.closest('.card')
@@ -29,12 +31,17 @@ function addCarritoItem(e) {
     console.log (miProducto)
 }
 
+
 // ---------------- cargando el array-----------------------------
+
 function anadirAlCarrito(miProducto) {
     productos.push(miProducto);
     cargarCarrito();
 }
+
+
 // ----------------- item del carrito----------------------------
+
 function cargarCarrito() {
     modalCarrito.innerHTML = ''
     productos.map(item => {
@@ -54,7 +61,10 @@ function cargarCarrito() {
         modalCarrito.append(tablaItem)
     })
 }
-// --------------- modo oscuro con jquery------------------------
+
+
+// --------------- modo oscuro con jquery ------------------------
+
 const modoOscuro = $('.modoOscuro')
 $('.modoOscuro').on('click', () => {
     $('body').toggleClass('modoOscuroBody')
