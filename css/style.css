@@ -1,4 +1,9 @@
-.modoOscuroBody {
-    background-color:
-        #5a5864;
+body {
+  background-color: #5a5864;
+  transition: 0.3s ease all;
 }
+body.dark {
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+body {
+    background-color: #5a5864;
+    transition: .3s ease all;
+
+    &.dark {
+        background-color: #ffffff;
+    }
+}

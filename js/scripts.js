@@ -3,19 +3,19 @@
 
 //---------------- seleccionar botones--------------------------
 
-const clickBoton = document.querySelectorAll('.botonAnadir')
-const modalCarrito = document.querySelector('.modal-body')
-let productos = []
+const clickBoton = document.querySelectorAll('.botonAnadir');
+const modalCarrito = document.querySelector('.modal-body');
+let productos = [];
 clickBoton.forEach(btn => {
     btn.addEventListener('click', addCarritoItem)
-})
+});
 
 
 // --------------- armando el objeto---------------------------
 
 function addCarritoItem(e) {
-    const button = e.target
-    const item = button.closest('.card')
+    const button = e.target;
+    const item = button.closest('.card');
     const itemTitle = item.querySelector('.fw-bolder').textContent;
     const itemPrecio = item.querySelector('.precio').textContent;
     const itemImg = item.querySelector('.card-img-top').src;
@@ -26,10 +26,10 @@ function addCarritoItem(e) {
         img: itemImg,
         cantidad: 1
         
-    }
+    };
     anadirAlCarrito(miProducto);
-    console.log (miProducto)
-}
+    console.log (miProducto);
+};
 
 
 // ---------------- cargando el array-----------------------------
@@ -56,16 +56,17 @@ function cargarCarrito() {
             <td class="table__cantidad">
                 <input type="number" min="1" value=${item.cantidad} class="input__elemento">
                 <button class="delete btn btn-danger">x</button>
-            </td>`
+            </td>`;
         tablaItem.innerHTML = contenedor;
-        modalCarrito.append(tablaItem)
+        modalCarrito.append(tablaItem);
     })
-}
+};
 
 
 // --------------- modo oscuro con jquery ------------------------
 
-const modoOscuro = $('.modoOscuro')
+
+const modoOscuro = $('.modoOscuro');
 $('.modoOscuro').on('click', () => {
-    $('body').toggleClass('modoOscuroBody')
-})
+    $('body').toggleClass('dark')
+});
