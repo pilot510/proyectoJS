@@ -94,7 +94,7 @@ function sumarTotal() {
     guardarLocalStorage();
 }
 
-// --------------- eliminar item ------------------------
+// --------------- eliminar item --------------------------------------
 
 function eliminarItem(e) {
     const botonEliminar = e.target;
@@ -109,7 +109,7 @@ function eliminarItem(e) {
     sumarTotal();
 }
 
-// --------------- sumar cantidad ------------------------ 
+// --------------- sumar cantidad --------------------------------------- 
 
 function sumarCantidad(e) {
     const inputElemento = e.target;
