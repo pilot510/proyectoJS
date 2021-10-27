@@ -73,6 +73,7 @@ function cargarCarrito() {
                 <button class="delete btn btn-danger">x</button>
             </td>`;
         tablaItem.innerHTML = contenedor;
+        
         modalCarrito.append(tablaItem);
 
         tablaItem.querySelector('.delete').addEventListener('click', eliminarItem);
