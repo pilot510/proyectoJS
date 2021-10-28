@@ -1,0 +1,33 @@
+[{
+    "nombre": "Mouse",
+    "precio": 5000,
+    "id": 1
+}, {
+    "nombre": "Teclado",
+    "precio": 25000,
+    "id": 2
+}, {
+    "nombre": "Auriculares",
+    "precio": 15000,
+    "id": 3
+}, {
+    "nombre": "Microfono",
+    "precio": 8000,
+    "id": 4
+}, {
+    "nombre": "Monitor",
+    "precio": 35000,
+    "id": 5
+}, {
+    "nombre": "CPU",
+    "precio": 45000,
+    "id": 6
+}, {
+    "nombre": "GPU",
+    "precio": 75000,
+    "id": 7
+}, {
+    "nombre": "Gabinete",
+    "precio": 10000,
+    "id": 8
+}]

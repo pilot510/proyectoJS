@@ -160,3 +160,15 @@ if (localStorage.getItem('modoOscuro') === 'true') {
 } else {
     document.body.classList.remove('dark');
 }
+
+// --------------- json ------------------------
+
+const URLJSON = "./js/productos.json"
+
+$("footer").prepend(`<button type="button" class="json btn btn-outline-light">JSON</button>`);
+$(".json").on("click", function () {
+    $.getJSON(URLJSON, function (data, estado) {
+        console.log(data);
+        console.log(estado);
+    });
+});
