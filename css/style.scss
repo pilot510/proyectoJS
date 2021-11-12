@@ -13,4 +13,14 @@ body {
     &.dark {
         background-color: #f5f5f5;
     }
+
+    #alertaCompra {
+        z-index: 999999 ;
+        text-align: center;
+    }
+
+    .alertaCompra {
+        display: none;
+
+    }
 }

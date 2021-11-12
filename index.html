@@ -32,7 +32,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-success" id="btn-pagar">Comprar</button>
+                    <button type="button" class="btn btn-success" id="comprar" data-bs-dismiss="modal">Comprar</button>
                 </div>
             </div>
         </div>
@@ -53,6 +53,9 @@
         </div>
     </nav>
     <!-- Header-->
+    <div id="alertaCompra" class="alert container position-sticky top-0 alert-info alertaCompra" role="alert">
+        Gracias por su compra! Lo contactaremos a la brevedad.
+    </div>
     <!-- Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
@@ -67,7 +70,8 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Mouse</h5>
                                 <!-- Product price-->
-                                <span class="precio">$5000</span>
+                                <span class="id" style="display:none;">1</span>
+                                <span class="precio">5000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -100,8 +104,9 @@
                                     <div class="bi-star-fill"></div>
                                 </div>
                                 <!-- Product price-->
+                                <span class="id" style="display:none;">2</span>
                                 <span class="text-muted text-decoration-line-through"></span>
-                                <span class="precio">$25000</span>
+                                <span class="precio">25000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -126,8 +131,9 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Auriculares</h5>
                                 <!-- Product price-->
+                                <span class="id" style="display:none;">3</span>
                                 <span class="text-muted text-decoration-line-through"></span>
-                                <span class="precio">$15000</span>
+                                <span class="precio">15000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -157,7 +163,8 @@
                                     <div class="bi-star-fill"></div>
                                 </div>
                                 <!-- Product price-->
-                                <span class="precio">$8000</span>
+                                <span class="id" style="display:none;">4</span>
+                                <span class="precio">8000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -182,8 +189,9 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Monitor</h5>
                                 <!-- Product price-->
+                                <span class="id" style="display:none;">5</span>
                                 <span class="text-muted text-decoration-line-through"></span>
-                                <span class="precio">$35000</span>
+                                <span class="precio">35000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -205,7 +213,8 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">CPU</h5>
                                 <!-- Product price-->
-                                <span class="precio">$45000</span>
+                                <span class="id" style="display:none;">6</span>
+                                <span class="precio">45000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -239,8 +248,9 @@
                                     <div class="bi-star-fill"></div>
                                 </div>
                                 <!-- Product price-->
+                                <span class="id" style="display:none;">7</span>
                                 <span class="text-muted text-decoration-line-through"></span>
-                                <span class="precio">$75000</span>
+                                <span class="precio">75000</span>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -270,7 +280,8 @@
                                     <div class="bi-star-fill"></div>
                                 </div>
                                 <!-- Product price-->
-                                <span class="precio">$10000</span>
+                                <span class="id" style="display:none;">8</span>
+                                <span class="precio">10000</span>
                             </div>
                         </div>
                         <!-- Product actions-->

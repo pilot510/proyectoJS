@@ -17,12 +17,14 @@ function addCarritoItem(e) {
     const itemTitle = item.querySelector(".fw-bolder").textContent;
     const itemPrecio = item.querySelector(".precio").textContent;
     const itemImg = item.querySelector(".card-img-top").src;
+    const itemId = item.querySelector(".id").textContent;
 
     const miProducto = {
         title: itemTitle,
         precio: itemPrecio,
         img: itemImg,
         cantidad: 1,
+        id: itemId,
     };
     anadirAlCarrito(miProducto);
     console.log(miProducto);
@@ -167,88 +169,18 @@ $(".json").on("click", function () {
     });
 });
 
-// -------------------- mercado pago --------------------------------
-const botonComprar = document.querySelector("#btn-pagar");
-botonComprar.addEventListener("click", comprar);
-async function comprar() {
-    const productosMercadoPago = productos.map(item => {
-        return {
-            title: item.title,
-            description: "",
-            picture_url: "",
-            category_id: "",
-            quantity: item.cantidad,
-            currency_id: "ARS",
-            unit_price: item.precio,
-            
-        };
-        
-    });;
-    console.log(productosMercadoPago);
+//------------ boton comprar carrito y local storage-------------------------------------
 
-    const mercadoPagoPagar = await fetch(
-        "https://api.mercadopago.com/checkout/preferences", {
-        method: 'POST',
-        headers: {
-            Auhorization: 'Bearer TEST-702623294928968-111020-1d8fd9c93e95061eaf5f3e8c8a64631b-603432288',
-        },
-        body: JSON.stringify({
-            items: productosMercadoPago,
-        })
-    });
-    const data = await mercadoPagoPagar.json();
-    console.log(data);
-};
+const botonComprar = document.querySelector('#comprar');
+botonComprar.addEventListener('click', () => {
+    modalCarrito.innerHTML = "";
+    productos = [];
+    sumarTotal();
+    guardarLocalStorage();
+const alert = document.querySelector('.alert');
+    setTimeout(() => {
+        alert.classList.add("alertaCompra")
+        }, 3000)
+        alert.classList.remove("alertaCompra");
 
-// curl -X POST \
-//     'https://api.mercadopago.com/v1/payments' \
-//     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-//     -H 'Content-Type: application/json' \
-//     -d '{
-//   "additional_info": {
-//     "items": [
-//       {
-//         "id": "PR0001",
-//         "title": "Point Mini",
-//         "description": "Producto Point para cobros con tarjetas mediante bluetooth",
-//         "picture_url": "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
-//         "category_id": "electronics",
-//         "quantity": 1,
-//         "unit_price": 58.8
-//       }
-//     ],
-//     "payer": {
-//       "first_name": "Test",
-//       "last_name": "Test",
-//       "phone": {
-//         "area_code": 11,
-//         "number": "987654321"
-//       },
-//       "address": {}
-//     },
-//     "shipments": {
-//       "receiver_address": {
-//         "zip_code": "12312-123",
-//         "state_name": "Rio de Janeiro",
-//         "city_name": "Buzios",
-//         "street_name": "Av das Nacoes Unidas",
-//         "street_number": 3003
-//       }
-//     },
-//     "barcode": {}
-//   },
-//   "description": "Payment for product",
-//   "external_reference": "MP0001",
-//   "installments": 1,
-//   "metadata": {},
-//   "order": {
-//     "type": "mercadolibre"
-//   },
-//   "payer": {
-//     "entity_type": "individual",
-//     "type": "customer",
-//     "identification": {}
-//   },
-//   "payment_method_id": "visa",
-//   "transaction_amount": 58.8
-// }'
+});

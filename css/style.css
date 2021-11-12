@@ -12,4 +12,11 @@ body {
 }
 body.dark {
   background-color: #f5f5f5;
+}
+body #alertaCompra {
+  z-index: 999999;
+  text-align: center;
+}
+body .alertaCompra {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
