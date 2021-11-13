@@ -1,0 +1,20 @@
+{
+  "name": "proyectojs",
+  "version": "1.0.0",
+  "description": "Carrito de compras para curso de javascript en coder house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiago510/proyectoJS.git"
+  },
+  "keywords": [],
+  "author": "Santiago Iannucci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiago510/proyectoJS/issues"
+  },
+  "homepage": "https://github.com/santiago510/proyectoJS#readme"
+}
